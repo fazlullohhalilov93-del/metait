@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jingalak IT School — Qabul</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="#">Jingalak <span>IT School</span></a>
+  <a class="btn btn-small" href="#register">Ro‘yxatdan o‘tish</a>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Kelajak kasbini bugun o‘rganing</h1>
+    <p>Beshta yo‘nalish, amaliy darslar va tajribali ustozlar. O‘zingizga yoqqanini tanlang.</p>
+  </section>
+
+  <section class="courses" aria-label="Kurslar">
+    <div class="carousel" id="carousel">
+      <div class="track" id="track">
+        <article class="slide" style="--c:#3D3BF3">
+          <div class="glyph">&lt;/&gt;</div>
+          <div class="info"><h2>Dasturlash</h2><p>HTML, CSS, JavaScript va Python. Birinchi saytingizni o‘zingiz yaratasiz.</p></div>
+        </article>
+        <article class="slide" style="--c:#E8590C">
+          <div class="glyph">⚙</div>
+          <div class="info"><h2>Robototexnika</h2><p>Arduino va datchiklar bilan o‘z robotingizni yig‘ib, dasturlaysiz.</p></div>
+        </article>
+        <article class="slide" style="--c:#C2255C">
+          <div class="glyph">✎</div>
+          <div class="info"><h2>Dizayn</h2><p>Figma, Photoshop va UI/UX asoslari. Chiroyli va qulay dizayn yaratishni o‘rganing.</p></div>
+        </article>
+        <article class="slide" style="--c:#0B7285">
+          <div class="glyph">AI</div>
+          <div class="info"><h2>Sun’iy intellekt</h2><p>Neyron tarmoqlar va ChatGPT kabi vositalar bilan ishlashni amaliyotda o‘rganasiz.</p></div>
+        </article>
+        <article class="slide" style="--c:#2B8A3E">
+          <div class="glyph">🔒</div>
+          <div class="info"><h2>Kiberxavfsizlik</h2><p>Ma’lumotlar va tarmoqlarni himoya qilish, xavfsiz internet qoidalari.</p></div>
+        </article>
+      </div>
+      <button class="nav prev" id="prev" aria-label="Oldingi kurs">‹</button>
+      <button class="nav next" id="next" aria-label="Keyingi kurs">›</button>
+    </div>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <section class="register" id="register">
+    <div class="form-card">
+      <h2>Kursga yoziling</h2>
+      <p class="sub">Ma’lumotlaringizni qoldiring, biz siz bilan bog‘lanamiz.</p>
+      <form id="regForm" novalidate>
+        <label for="name">Ism</label>
+        <input id="name" name="name" type="text" placeholder="Ismingiz" autocomplete="name" required>
+
+        <label for="age">Yosh</label>
+        <input id="age" name="age" type="number" inputmode="numeric" min="5" max="80" placeholder="Masalan, 14" required>
+
+        <label for="phone">Telefon raqam</label>
+        <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+998 90 123 45 67" autocomplete="tel" required>
+
+        <button class="btn" id="submitBtn" type="submit">Yuborish</button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>© Jingalak IT School</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
